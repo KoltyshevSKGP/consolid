@@ -3,8 +3,8 @@ header("Content-type: text/html; charset=utf8");
 date_default_timezone_set('Europe/Kiev');
 
 $servername = "localhost";
-$username = "admin";
-$password = "bdbd98d47f113d27b3d3aec96335d256d278a114e7aeff38";
+$username = "root";
+$password = "root";
 $dbname = "consolid_app";
 
 global $DB;
