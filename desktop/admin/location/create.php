@@ -97,7 +97,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/include/desktop/layout/content-start.php")
                             <div class="col-xl-4 col-md-6 col-12">
                                 <div class="mb-1">
                                     <label class="form-label" for="carModel">Посилання Maps</label>
-                                    <input type="text" name="maps_link" class="form-control" placeholder="https://" value="">
+                                    <input type="text" name="maps_link" class="form-control" placeholder="http://" value="">
                                     <p><small class="text-muted">Введіть посилання на точні координати локації</small></p>
                                 </div>
                             </div>

@@ -109,7 +109,7 @@ $location=$locationT->fetch_assoc();
                             <div class="col-xl-4 col-md-6 col-12">
                                 <div class="mb-1">
                                     <label class="form-label" for="carModel">Посилання Maps</label>
-                                    <input type="text" name="maps_link" class="form-control" placeholder="https://" value="<?php echo $location["maps_link"]?>">
+                                    <input type="text" name="maps_link" class="form-control" placeholder="http://" value="<?php echo $location["maps_link"]?>">
                                     <p><small class="text-muted">Введіть посилання на точні координати локації</small></p>
                                 </div>
                             </div>

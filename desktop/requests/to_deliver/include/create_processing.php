@@ -105,7 +105,7 @@ if(isset($_POST["number"])) {
         CURLOPT_URL => "http://t101.tool.skgp.eu/ajax/getPdf.php",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_POST => true,
-        CURLOPT_POSTFIELDS => json_encode(array("source" => "https://$_SERVER[HTTP_HOST]/desktop/requests/to_send/include/print_pallet_content.php?id=".$result["result"]["id"], "landscape" => false, "use_print" => false, "margin"=>"0px 5px 0px 10px")),
+        CURLOPT_POSTFIELDS => json_encode(array("source" => "http://$_SERVER[HTTP_HOST]/desktop/requests/to_send/include/print_pallet_content.php?id=".$result["result"]["id"], "landscape" => false, "use_print" => false, "margin"=>"0px 5px 0px 10px")),
         CURLOPT_HTTPHEADER => array('Content-Type:application/json'),
         CURLOPT_USERPWD => ""
     ));

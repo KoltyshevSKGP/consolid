@@ -11,7 +11,7 @@ $income_data=array(
 if(!isset($_POST["login-email"]) || !isset($_POST["login-password"])
     || $_POST["login-email"]=="" || $_POST["login-password"]=="") {
 
-    header("Location: https://$_SERVER[HTTP_HOST]/?error=lost_data");
+    header("Location: http://$_SERVER[HTTP_HOST]/?error=lost_data");
     die();
 }
 $income_data["email"]=$_POST["login-email"];
@@ -21,15 +21,15 @@ $income_data["login-redirect"]=$_POST["login-redirect"];
 $userT=$DB->query("SELECT * FROM `user` WHERE `email`='".$income_data["email"]."'");
 $user=$userT->fetch_assoc();
 if(!isset($user["id"])) {
-    header("Location: https://$_SERVER[HTTP_HOST]/?error=user_not_found");
+    header("Location: http://$_SERVER[HTTP_HOST]/?error=user_not_found");
     die();
 }
 if($user["active"]==0) {
-    header("Location: https://$_SERVER[HTTP_HOST]/?error=user_not_active");
+    header("Location: http://$_SERVER[HTTP_HOST]/?error=user_not_active");
     die();
 }
 if($user["password"]!=$income_data["password"]) {
-    header("Location: https://$_SERVER[HTTP_HOST]/?error=password_error");
+    header("Location: http://$_SERVER[HTTP_HOST]/?error=password_error");
     die();
 }
 $_SESSION["id"]=$user["id"];
@@ -50,4 +50,4 @@ if($income_data["login-redirect"]!="") {
     header("Location: ".$income_data["login-redirect"]);
     die();
 }
-header("Location: https://$_SERVER[HTTP_HOST]/desktop/dashboard/");
+header("Location: http://$_SERVER[HTTP_HOST]/desktop/dashboard/");

@@ -2,7 +2,7 @@
 $email=array(
     "subject" => "Обробка запиту на доставку №".$_GET["id"],
     "content" => "Ваш запит на доставку №".$_GET["id"]." змінив статус на: ",
-    "content_finish" => "<br>Переглянути запит: <a href='https://$_SERVER[HTTP_HOST]/desktop/requests/to_send/view.php?id=".$_GET["id"]."'>consolid.io</a>"
+    "content_finish" => "<br>Переглянути запит: <a href='http://$_SERVER[HTTP_HOST]/desktop/requests/to_send/view.php?id=".$_GET["id"]."'>consolid.io</a>"
 );
 if(isset($_GET["action"])) {
     switch ($_GET["action"]) {

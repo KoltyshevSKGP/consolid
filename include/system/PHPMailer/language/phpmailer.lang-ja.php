@@ -5,7 +5,7 @@
  * @package PHPMailer
  * @author Mitsuhiro Yoshida <http://mitstek.com/>
  * @author Yoshi Sakai <http://bluemooninc.jp/>
- * @author Arisophy <https://github.com/arisophy/>
+ * @author Arisophy <http://github.com/arisophy/>
  */
 
 $PHPMAILER_LANG['authenticate']         = 'SMTPエラー: 認証できませんでした。';

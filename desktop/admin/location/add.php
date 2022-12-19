@@ -40,7 +40,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/include/desktop/layout/content-start.php")
                         <div class="col-xl-4 col-md-6 col-12">
                             <div class="mb-1">
                                 <label class="form-label" for="maps_link">Посилання на мапу</label>
-                                <input type="text" id="maps_link" class="form-control" placeholder="https://maps.google.com/">
+                                <input type="text" id="maps_link" class="form-control" placeholder="http://maps.google.com/">
                                 <p><small class="text-muted">Посилання на мапу з локацією</small></p>
                             </div>
                         </div>

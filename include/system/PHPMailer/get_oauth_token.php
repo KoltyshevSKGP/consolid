@@ -4,7 +4,7 @@
  * PHPMailer - PHP email creation and transport class.
  * PHP Version 5.5
  * @package PHPMailer
- * @see https://github.com/PHPMailer/PHPMailer/ The PHPMailer GitHub project
+ * @see http://github.com/PHPMailer/PHPMailer/ The PHPMailer GitHub project
  * @author Marcus Bointon (Synchro/coolbru) <phpmailer@synchromedia.co.uk>
  * @author Jim Jagielski (jimjag) <jimjag@gmail.com>
  * @author Andy Prevost (codeworxtech) <codeworxtech@users.sourceforge.net>
@@ -38,11 +38,11 @@ namespace PHPMailer\PHPMailer;
  * Plenty to choose from here:
  * @see http://oauth2-client.thephpleague.com/providers/thirdparty/
  */
-//@see https://github.com/thephpleague/oauth2-google
+//@see http://github.com/thephpleague/oauth2-google
 use League\OAuth2\Client\Provider\Google;
-//@see https://packagist.org/packages/hayageek/oauth2-yahoo
+//@see http://packagist.org/packages/hayageek/oauth2-yahoo
 use Hayageek\OAuth2\Client\Provider\Yahoo;
-//@see https://github.com/stevenmaguire/oauth2-microsoft
+//@see http://github.com/stevenmaguire/oauth2-microsoft
 use Stevenmaguire\OAuth2\Client\Provider\Microsoft;
 
 if (!isset($_GET['code']) && !isset($_GET['provider'])) {
@@ -80,7 +80,7 @@ $clientId = 'RANDOMCHARS-----duv1n2.apps.googleusercontent.com';
 $clientSecret = 'RANDOMCHARS-----lGyjPcRtvP';
 
 //If this automatic URL doesn't work, set it yourself manually to the URL of this script
-$redirectUri = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+$redirectUri = (isset($_SERVER['HTTPS']) ? 'http://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 //$redirectUri = 'http://localhost/PHPMailer/redirect';
 
 $params = [
@@ -98,7 +98,7 @@ switch ($providerName) {
         $provider = new Google($params);
         $options = [
             'scope' => [
-                'https://mail.google.com/'
+                'http://mail.google.com/'
             ]
         ];
         break;

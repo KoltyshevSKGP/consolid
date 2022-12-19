@@ -31,7 +31,7 @@ if(isset($_POST["surname"])) {
         echo $result["error_message"];
         die();
     }
-    if($_POST["email"]!="") sendEmailNotification($_POST["email"], $_POST["surname"]." ".$_POST["name"], "Для вас створено користувача в системі <a href='https://$_SERVER[HTTP_HOST]'>Consolid.io</a><hr>Логін: ".$_POST["email"]."<br>Пароль: ".$_POST["password"]."<hr>Змініть пароль при першому вході в систему", "Створення користувача");
+    if($_POST["email"]!="") sendEmailNotification($_POST["email"], $_POST["surname"]." ".$_POST["name"], "Для вас створено користувача в системі <a href='http://$_SERVER[HTTP_HOST]'>Consolid.io</a><hr>Логін: ".$_POST["email"]."<br>Пароль: ".$_POST["password"]."<hr>Змініть пароль при першому вході в систему", "Створення користувача");
     header("Location: index.php");
     die();
 }

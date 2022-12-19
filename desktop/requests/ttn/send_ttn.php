@@ -14,7 +14,7 @@ $contact=$contactT->fetch_assoc();
 
 $email=array(
     "subject" => "Обробка запиту на доставку №".$requestConnected["id"],
-    "content" => "Ваш запит на доставку №".$requestConnected["id"]." отримав сформовану ТТН та палетні листи<br>Переглянути запит: <a href='https://$_SERVER[HTTP_HOST]/desktop/requests/to_send/view.php?id=".$_GET["id"]."'>consolid.io</a>"
+    "content" => "Ваш запит на доставку №".$requestConnected["id"]." отримав сформовану ТТН та палетні листи<br>Переглянути запит: <a href='http://$_SERVER[HTTP_HOST]/desktop/requests/to_send/view.php?id=".$_GET["id"]."'>consolid.io</a>"
 );
 
 

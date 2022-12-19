@@ -297,7 +297,7 @@ function sendTechnicalMessage($user, $messaggio) {
     $token = "1072889034:AAGE8AqhcxQU2XP4S2ToRrtx2CYWCwX-iQY";
     //227485427 - yurii
     //382715800 - Назар
-    $url = "https://api.telegram.org/bot" . $token . "/sendMessage?chat_id=" . $user;
+    $url = "http://api.telegram.org/bot" . $token . "/sendMessage?chat_id=" . $user;
     $url = $url . "&text=" . urlencode($messaggio);
     $ch = curl_init();
     $optArray = array(
