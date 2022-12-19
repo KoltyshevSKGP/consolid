@@ -2,7 +2,7 @@
 header("Content-type: text/html; charset=utf8");
 date_default_timezone_set('Europe/Kiev');
 
-$servername = "http://142.93.35.175/";
+$servername = "142.93.35.175";
 $username = "root";
 $password = "root";
 $dbname = "consolid_app";
