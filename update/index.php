@@ -37,14 +37,14 @@ ini_set('display_startup_errors', 1);
             <button type="button" hidden class="btn btn-md btn-primary" id="local_branch_button" onclick="getLocalBranches()">Показати доступні гілки</button>
             <select id="LocalBranches" style="display: none">
 <!--                <option selected value="develop">develop</option>-->
-                <option value="master">master</option>
+                <option value="main">main</option>
             </select>
         </div>
         <label>Select branch</label>
         <div class="mb-3">
             <select id="branch">
 <!--                <option selected value="develop">develop</option>-->
-                <option value="master">master</option>
+                <option value="main">main</option>
             </select>
             <button type="button" class="btn btn-md btn-primary" data-toggle="modal" data-target="#modalResult" id="branch_button">Move to</button>
             <button type="button" class="btn btn-md btn-warning" data-toggle="modal" data-target="#modalResult" id="update">Check for updates</button>
