@@ -31,7 +31,7 @@ DROP TABLE `label_lang`;
 --
 
 CREATE TABLE `label_company_lang` (
-                                      `id` int(11) NOT NULL,
+                                      `id` int(12) NOT NULL,
                                       `company` int(11) NOT NULL,
                                       `lang` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
